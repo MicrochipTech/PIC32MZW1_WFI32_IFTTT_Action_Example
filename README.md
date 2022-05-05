@@ -38,7 +38,7 @@ Below are other some examples of using IFTTT trigger to control the board:
 - [WFI32-IOT OOB project](https://github.com/MicrochipTech/WFI32-IoT)
 - [PIC32W1 Curisoity OOB project](https://github.com/MicrochipTech/PIC32MZW1_Curiosity_OOB)
 
-## Table of Contents
+## Table of Contents <a name="contents)"></a>
 
 1. [Overview](01_overview/README.md#top)
 	1. 	[Overview Of The Solution](01_overview/README.md#chapter1.1)
@@ -51,9 +51,10 @@ Below are other some examples of using IFTTT trigger to control the board:
 	1.	[Create Cognito User Pool And Identity Pool](03_device_registration_system_setup/README.md#chapter3.1)
 	1. 	[Create RDS For Storing Registration Data](03_device_registration_system_setup/README.md#chapter3.2)
 	1. 	[Create Lambda Function for Device Registration ](03_device_registration_system_setup/README.md#chapter3.3)
-		1.	[Lambda Function for registering devices](03_device_registration_system_setup/README.md#chapter3.3.1)
-    	1.  [Lambda Function for getting user devices](03_device_registration_system_setup/README.md#chapter3.3.2)
-    	1.  [Lambda Function for deleting user devices](03_device_registration_system_setup/README.md#chapter3.3.3)
+		1.  [Create policy for lambda to access VPC](03_device_registration_system_setup/README.md#chapter3.3.1)
+		1.	[Lambda Function for registering devices](03_device_registration_system_setup/README.md#chapter3.3.2)
+    	1.  [Lambda Function for getting user devices](03_device_registration_system_setup/README.md#chapter3.3.3)
+    	1.  [Lambda Function for deleting user devices](03_device_registration_system_setup/README.md#chapter3.3.4)
 	1. 	[Create API Gateway](03_device_registration_system_setup/README.md#chapter3.4)
 	1. 	[Create Registration website](03_device_registration_system_setup/README.md#chapter3.5)
 4. [IFTTT Service Related Setup](04_ifttt_service_setup/README.md#top)
@@ -69,5 +70,5 @@ Below are other some examples of using IFTTT trigger to control the board:
 5. [Run Demo](05_run_demo/README.md#top)
 	1. 	[Register devices](05_run_demo/README.md#chapter5.1)
 	1. 	[Create IFTTT Applet](05_run_demo/README.md#chapter5.2)
-	1. 	[erform Tests](05_run_demo/README.md#chapter5.3)
+	1. 	[Perform Tests](05_run_demo/README.md#chapter5.3)
 

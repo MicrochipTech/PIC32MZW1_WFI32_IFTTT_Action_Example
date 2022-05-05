@@ -1,6 +1,6 @@
 # 2. Connect WFI32-IoT board/ WFI32E Curiosity board to AWS Cloud
 
-[Back to Main page](../README.md)
+[Back to Main page](../README.md#contents)  
 
 To work with IFTTT action, the WFI32-IoT board/ WFI32E Curiosity board need to connect to AWS IoT Cloud. This Chapter show the steps to connect your board to the AWS IoT Cloud.
 
@@ -32,3 +32,6 @@ Below are the steps:
 1. Download the PIC32MZW1 Curiosity OOB project code ([link](https://github.com/MicrochipTech/PIC32MZW1_Curiosity_OOB))
 2. Use MPLABX to compile the code and download to the board
 3. Follow the [REAMD.md](https://github.com/MicrochipTech/PIC32MZW1_Curiosity_OOB/blob/master/README.md) of the PIC32MZW1 Curiosity OOB project, Section **Connecting to Your Cloud Instance** to connect the board to your AWS account
+
+
+[Back to Main page](../README.md#contents)  

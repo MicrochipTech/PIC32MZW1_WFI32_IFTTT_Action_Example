@@ -1,7 +1,8 @@
 # 3. Device Registration System Setup
 
-[Back to Main page](../README.md)
+[Back to Main page](../README.md#contents)     
 
+This chapter show the setup of the Device Registration System. You can get more information for this system in [Chapter 1 Overview](../01_overview/README.md#chapter1.1.2)
 ## Contents
 
 1. [Create Cognito User Pool And Identity Pool](#chapter3.1)
@@ -19,7 +20,7 @@
 Amazon Cognito is used to provide user identity for the end users, including sign-up, sign-in features. With Amazon Cognito, users can sign-up and sign-in the account using a website that mentioned in this document.
 
 To do this, you can follow below steps:
-1.	Go to Congito Console
+1.	Go to [Congito Console](https://aws.amazon.com/cognito/)
 2.	Click **Manage User Pools** to open **Your User Pools** browser.
 3.	Click **Create a user pool**.
 4.	Enter a pool name and select Review defaults.
@@ -43,7 +44,7 @@ To do this, you can follow below steps:
     <img src="resources/media/cognito_setup_05.png" width=600>
     </p>
 
-15.	Go to Congito Console
+15.	Go to [Congito Console](https://aws.amazon.com/cognito/)
 16.	Click **Manage Identity Pools**.
 17.	Click **Create new identity pool**.
 18.	Input an Identity pool name
@@ -61,9 +62,9 @@ To do this, you can follow below steps:
 
 ## 3.2 Create RDS For Storing Registration Data<a name="chapter3.2"></a>
 
-The MySQL database in Amazon RDS Service is used to store the registration data. These registration data include the account user name, thing name and device friendly name. To do this, you can follow below steps:
+The MySQL database in Amazon RDS Service is used to store the registration data. These registration data include the account user name and device thing name. To do this, you can follow below steps:
 
-1.	Go to RDS Console
+1.	Go to [RDS Console](https://aws.amazon.com/rds/)
 2.	Click **Create database**
 3.	Select **Standard create** and **MySQL** as the engine type.
     <p align="center">
@@ -87,11 +88,11 @@ The MySQL database in Amazon RDS Service is used to store the registration data.
 ---
 ## 3.3 Create Lambda Function for Device Registration <a name="chapter3.3"></a>
 
-There are 3 Lambda functions are used for device registration to the user’s Cognito account.
+There are 3 Lambda functions are used for device registration to the user’s Cognito account. These lambda functions are used to register and delete the devices from the RDS database, or get the device infomration from the RDS database.   
 Before creating the lambda, we need to create the policy for lambda role to access VPC.
 
 ### 3.3.1 Create policy for lambda to access VPC <a name="chapter3.3.1"></a>
-1.	Go to AWS account IAM console (https://aws.amazon.com/iam/)
+1.	Go to AWS account [IAM console](https://aws.amazon.com/iam/)
 2.	Select **Policy** in the left panel, click **Create Policy** button
 3.  Select **JSON** tab and paste below content to the policy 
     ```
@@ -266,7 +267,7 @@ Below table show the routes of the API you need to create.
 
 
 Steps:
-1.	Go to  Amazon API Gateway console
+1.	Go to [Amazon API Gateway console](https://aws.amazon.com/api-gateway/)
 2.	In the navigation pane, choose APIs.
 3.	Click Create API
 4.	Choose HTTP API, click Build
@@ -292,7 +293,7 @@ Steps:
 
 You can use Github to host the registration website.
 Setup steps:
-1.	Create and login to your Github account 
+1.	Create and login to your [Github](https://github.com/) account 
 2.	Create a repository named “mchpiotcontrol” for the website code.
 3.	Unzip the website_code.zip to get the content of the website, do below change in the index.html
     - Search and replace all “https://xxxxxxx.execute-api.us-east-2.amazonaws.com" with the API Gateway URL. You can get the url in [Chapter 3.4 Create API Gateway, step 11](#chapter3.4) 
@@ -308,3 +309,6 @@ Setup steps:
     <img src="resources/media/website_setup_02.png" width=400>
     </p>
 6.	User can access the website at https//<GITHUB_ID>.github.io/mchpiotcontrol
+
+
+[Back to Main page](../README.md#contents)  

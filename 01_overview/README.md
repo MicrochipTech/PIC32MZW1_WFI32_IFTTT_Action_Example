@@ -1,6 +1,6 @@
 # OverView
 
-[Back to Main page](../README.md)
+[Back to Main page](../README.md#contents)  
 
 ## Contents
 
@@ -15,7 +15,7 @@ This solution is close to a market end product. It includes a user registation s
 
 Overall block diagram
     <p align="center">
-    <img src="resources/media/block_diagram_01.png" width=800>
+    <img src="resources/media/block_diagram_01.png" width=1000>
     </p>
 
 The solution can separte into two parts:
@@ -26,7 +26,7 @@ The solution can separte into two parts:
 
 ### IFTTT Service Workflow<a name="chapter1.1.1"></a>
 
-The blue color below is the IFTTT Service Workflow:
+The blue circle below is the IFTTT Service Workflow:
     <p align="center">
     <img src="resources/media/block_diagram_03.png" width=600>
     </p>
@@ -34,7 +34,7 @@ The blue color below is the IFTTT Service Workflow:
 Highlights:
 - The IFTTT trigger service is a third party published service. Example of IFTTT trigger services are Alexa, Google Assistance, Wemo light switch etc. With these example services, users can speak to Alexa/ Google Assistance enabled device, or use Wemo light switch to control the endpoint devices (WFI32-IoT board/ WFI32E Curiosity board)
 - The IFTTT action service is created in this project to work with the AWS Cloud and the endpoint devices (WFI32-IoT board/ WFI32E Curiosity board)
-- IFTTT action service authenticate with the Amazon Cogntio using OAuth2 protocol. Token is get to access the HTTP API if the authenticate is success 
+- IFTTT action service authenticate with the Amazon Cogntio using OAuth2 protocol. Secure token is get to access the HTTP API if the authentication is success 
 - Amazon API Gateway provide the HTTP API for the IFTTT service to work with. IFTTT service send HTTP GET/ POST to retieve or send event to the endpoint devices. The requirpments for the IFTTT Service API can be found in this [link](https://ifttt.com/docs/api_reference) 
 - AWS Lambda functions are needed to process the HTTP request from IFTTT action service. The Lambda publish MQTT message to AWS IoT Core. Endpoint devices (WFI32-IoT board/ WFI32E Curiosity board) connected to AWS IoT Core and able to receive the MQTT message from the Lambda.
 - Two action (switch_on and switch_off) is created in the action service, the LED on endpoint devices (WFI32-IoT board/ WFI32E Curiosity board) can be turn on/ off
@@ -42,19 +42,19 @@ Highlights:
 
 ### Device Registration System<a name="chapter1.1.2"></a>
 
-The green color below is the device registartion system design:
+The green circle below is the device registartion system design:
     <p align="center">
     <img src="resources/media/block_diagram_02.png" width=800>
     </p>
 
 Highlights:
-- Amazon Cognito provide the user pool feature. Users sign-up/ sign-in on the website, user account is created for device registration
+- Amazon Cognito provide the user pool feature. Users sign-up/ sign-in in the website, user account is created for device registration
 - In the website, users can register the things name of the WFI32-IoT board/ PIC32MZW1 Curiosity board to their account
 - Amazon API Gateway provide the HTTP API for the website to register/ delete the device and get the registered device info  
 - AWS Lambda functions are needed to process the HTTP request from the website 
 - Account user name and device things name are stored in MySQL database of Amazon RDS
 
-In Regisrtion webiste, thing name can be registered/ deleted from the account
+In the Registration website, thing name can be registered/ deleted from the account
     <p align="center">
     <img src="resources/media/registration_website_01.png" width=800>
     </p>
@@ -66,4 +66,4 @@ With the device registation system, you can select the device in the dropdown me
 
 
 
-
+[Back to Main page](../README.md#contents)  

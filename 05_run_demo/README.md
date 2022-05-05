@@ -1,13 +1,13 @@
 # 5. Run Demo
 
-[Back to Main page](../README.md)
+[Back to Main page](../README.md#contents)  
 
 
 ## Contents
 
 1. [Register devices](#chapter5.1)
 1. [Create IFTTT Applet](#chapter5.2)
-1. [erform Tests](#chapter5.3)
+1. [Perform Tests](#chapter5.3)
 
 **Watch the video and see how to setup and perform the demo**
 <p align="center">
@@ -97,3 +97,6 @@ You will create 2 Applets to switch on and off the LED on the WFI32-IoT board or
     <p align="center">
     <img src="resources/media/demo_13.png" width=600>
     </p>
+
+
+[Back to Main page](../README.md#contents)  

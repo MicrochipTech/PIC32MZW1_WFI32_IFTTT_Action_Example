@@ -1,6 +1,7 @@
 # 4. IFTTT Service setup
 
-[Back to Main page](../README.md)
+[Back to Main page](../README.md#contents)    
+This chapter show the setup of the IFTTT service and related AWS Cloud services. You can get more information for the workflow of IFTTT Service in [Chapter 1 Overview](../01_overview/README.md#chapter1.1.1)
 
 ## Contents
 
@@ -19,7 +20,7 @@
 You need to create a Cognito User Pool Client for the authenientication with the IFTTT Service
 
 To do this, you can follow below steps:
-1.	Go to Congito Console
+1.	Go to [Congito Console](https://aws.amazon.com/cognito/)
 2.	Select the Cognito Pool that you created in [Chapter 3.1 Create Cognito User Pool And Identity Pool](../03_device_registration_system_setup/README.md#chapter3.1)
 6.	Select **App clients** in the left panel and click **Add an app client** to create App Client “**iftttapp**"
 7.	Tick the **Generate client secret** check box.
@@ -47,7 +48,7 @@ The Lambda functions here are needed to work with the IFTTT Service.
 
 IFTTT Service send HTTP request to get the endpoint's basic user info after the service authentication process, this lambda is used to provide the info to IFTTT Service.
 
-1.	Go to AWS account Lambda console (https://aws.amazon.com/lambda/)
+1.	Go to [AWS Lambda console](https://aws.amazon.com/lambda/)
 2.	Click Create Function Button
 3.	Select below settings:
     <p align="center">
@@ -75,7 +76,7 @@ IFTTT Service send HTTP request to get the endpoint's basic user info after the 
 
 This lambda function is used to provide an API endpoint which IFTTT can periodically check for your service’s availability.
 
-1.	Go to AWS account Lambda console (https://aws.amazon.com/lambda/)
+1.	Go to [AWS Lambda console](https://aws.amazon.com/lambda/)
 2.	Click Create Function Button
 3.	Select below settings:
     <p align="center">
@@ -101,7 +102,7 @@ This lambda function is used to provide an API endpoint which IFTTT can periodic
 
 This lambda function is used to provide an API endpoint which IFTTT send the action event to. The action is switching on the LED. 
 
-1.	Go to AWS account Lambda console (https://aws.amazon.com/lambda/)
+1.	Go to [AWS Lambda console](https://aws.amazon.com/lambda/)
 2.	Click Create Function Button
 3.	Select below settings:
     <p align="center">
@@ -136,7 +137,7 @@ This lambda function is used to provide an API endpoint which IFTTT send the act
 
 This lambda function is used to provide an API endpoint which IFTTT send the action event to. The action is switching on the LED. 
 
-1.	Go to AWS account Lambda console (https://aws.amazon.com/lambda/)
+1.	Go to [AWS Lambda console](https://aws.amazon.com/lambda/)
 2.	Click Create Function Button
 3.	Select below settings:
     <p align="center">
@@ -172,7 +173,7 @@ This lambda function is used to provide an API endpoint which IFTTT send the act
 
 This lambda function is used to provide an API endpoint which IFTTT request the list of options for the action. The list of options in this project is the device friendly name that you register in the device registration website
 
-1.	Go to AWS account Lambda console (https://aws.amazon.com/lambda/)
+1.	Go to [AWS Lambda console](https://aws.amazon.com/lambda/)
 2.	Click Create Function Button
 3.	Select below settings:
     <p align="center">
@@ -234,7 +235,7 @@ Below table show the routes of the API you need to create.
 &nbsp;
 &nbsp; 
 Steps:
-1.	Go to  Amazon API Gateway console
+1.	Go to [Amazon API Gateway console](https://aws.amazon.com/api-gateway/)
 2.	In the navigation pane, choose APIs.
 3.	Click Create API
 4.	Choose HTTP API, click Build
@@ -261,7 +262,7 @@ Steps:
 To configure the IFTTT Service, you can go to IFTTT website and follow below steps
 
 Setup steps:
-1.	Go to IFTTT website https://ifttt.com/explore
+1.	Go to [IFTTT website](https://ifttt.com/explore)
 2.	Click **Developer** in the top menu bar and select **Dashboard**
     <p align="center">
     <img src="resources/media/ifttt_service_setup_01.png" width=600>
@@ -320,3 +321,6 @@ Setup steps:
         - **Data source for dropdown list**: select option "Retrieve list items from my service"
 
     Click **Save** 
+
+
+[Back to Main page](../README.md#contents)  
